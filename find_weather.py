@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 def check_weather(city):
     # Функция для получения погоды по городу через поисковый запрос OpenAI.
     headers = {
-        "User-Agent" : "#Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 YaBrowser/24.7.0.0 Safari/537.36"
+        "User-Agent" : "ваш юзер агент"
        }
     # Заголовки для запроса, имитирующие браузер для обхода ограничений OpenAI.
     responce = requests.get(f"https://www.google.com/search?q=погода+в+{city}", headers=headers)
